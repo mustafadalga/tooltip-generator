@@ -39,7 +39,6 @@ const styleProperties = Object.freeze({
             inset: 'inset',
             outset: 'outset',
             none: 'none',
-            hidden: 'hidden'
         }
     }
 })

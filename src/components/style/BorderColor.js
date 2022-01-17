@@ -23,7 +23,7 @@ const BorderColor = () => {
 
     return (
         <div className="grid gap-2">
-            <h5>Color</h5>
+            <h5>Border Color</h5>
             <div className="flex items-center gap-4 p-1 border border-solid border-black">
                 <input type="color"
                        value={color}

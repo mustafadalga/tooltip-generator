@@ -14,12 +14,12 @@ export const tooltip = createSlice({
             paddingBottom: 15,
             borderRadius: 25,
             textAlign: 'left',
-            borderStyle: 'solid',
-            borderLeftWidth: 0,
-            borderRightWidth: 0,
-            borderTopWidth: 0,
-            borderBottomWidth:0,
-            borderColor:'#27272a' ,
+            borderStyle: 'none',
+            borderLeftWidth: 2,
+            borderRightWidth: 2,
+            borderTopWidth: 2,
+            borderBottomWidth:2,
+            borderColor:'#a1c657' ,
         },
         triangleStyle: {},
         sections: {
@@ -49,7 +49,7 @@ export const tooltip = createSlice({
             },
             border: {
                 isEnabled: true,
-                visibility: true,
+                visibility: false,
             }
         },
         tooltipText: 'Tooltip !',

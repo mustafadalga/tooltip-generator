@@ -15,6 +15,7 @@ const tooltipStyle = (options) => {
         borderRadius:`${options.borderRadius}px`,
         textAlign:`${options.textAlign}`,
         wordWrap: 'break-word',
+        borderStyle:`${options.borderStyle}`,
         borderColor:`${options.borderColor}`,
         borderLeftWidth: `${options.borderLeftWidth}px`,
         borderRightWidth: `${options.borderRightWidth}px`,
