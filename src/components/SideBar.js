@@ -4,7 +4,8 @@ import Padding from "./style/Padding";
 import BorderRadius from "./style/BorderRadius";
 import TextAlign from "./style/TextAlign";
 import TooltipText from "./TooltipText";
-import Border from "./style/Border";
+import Border from "./style/border/Border";
+import BoxShadow from "./style/box-shadow/BoxShadow";
 
 const SideBar = () => {
     return(
@@ -17,6 +18,7 @@ const SideBar = () => {
             <TextAlign/>
             <TooltipText/>
             <Border/>
+            <BoxShadow/>
 
         </div>
 

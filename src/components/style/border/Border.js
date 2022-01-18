@@ -1,5 +1,5 @@
-import SectionHeader from "../SectionHeader";
-import { sections } from "../../enums";
+import SectionHeader from "../../SectionHeader";
+import { sections } from "../../../enums";
 import BorderWidth from "./BorderWidth";
 import BorderColor from "./BorderColor";
 import BorderStyle from "./BorderStyle";

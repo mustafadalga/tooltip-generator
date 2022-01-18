@@ -40,6 +40,12 @@ const styleProperties = Object.freeze({
             outset: 'outset',
             none: 'none',
         }
+    },
+    boxShadow: {
+        boxShadowColor:'boxShadowColor',
+        boxShadowHorizontalLength:'boxShadowHorizontalLength',
+        boxShadowVerticalLength:'boxShadowVerticalLength',
+        boxShadowBlurRadius:'boxShadowBlurRadius',
     }
 })
 
@@ -50,7 +56,8 @@ const sections = Object.freeze({
     borderRadius: 'borderRadius',
     textAlign: 'textAlign',
     tooltipText: 'tooltipText',
-    border: 'border'
+    border: 'border',
+    boxShadow:'boxShadow'
 })
 
 

@@ -18,8 +18,12 @@ export const tooltip = createSlice({
             borderLeftWidth: 2,
             borderRightWidth: 2,
             borderTopWidth: 2,
-            borderBottomWidth:2,
-            borderColor:'#a1c657' ,
+            borderBottomWidth: 2,
+            borderColor: '#a1c657',
+            boxShadowColor:'#a1c657',
+            boxShadowHorizontalLength:0,
+            boxShadowVerticalLength:0,
+            boxShadowBlurRadius:0,
         },
         triangleStyle: {},
         sections: {
@@ -50,6 +54,10 @@ export const tooltip = createSlice({
             border: {
                 isEnabled: true,
                 visibility: false,
+            },
+            boxShadow: {
+                isEnabled: true,
+                visibility: true,
             }
         },
         tooltipText: 'Tooltip !',

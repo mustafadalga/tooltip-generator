@@ -21,6 +21,7 @@ const tooltipStyle = (options) => {
         borderRightWidth: `${options.borderRightWidth}px`,
         borderTopWidth: `${options.borderTopWidth}px`,
         borderBottomWidth:`${options.borderBottomWidth}px`,
+        boxShadow:`${options.boxShadowHorizontalLength}px ${options.boxShadowVerticalLength}px ${options.boxShadowBlurRadius}px ${options.boxShadowColor}`
     }
 
     console.log(style)

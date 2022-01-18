@@ -1,8 +1,8 @@
-import { styleProperties } from "../../enums";
-import ChevronDown from "../icons/chevronDown";
+import { styleProperties } from "../../../enums";
+import ChevronDown from "../../icons/chevronDown";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
+import { changeTooltipStyle } from "../../../store/slices/tooltip";
 
 const BorderStyle = () => {
 

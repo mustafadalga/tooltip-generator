@@ -1,29 +1,30 @@
-import { styleProperties } from "../../enums";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
+import { changeTooltipStyle } from "../../../store/slices/tooltip";
+import { styleProperties } from "../../../enums";
 
-const BorderColor = () => {
+const BoxShadowColor = () => {
     const dispatch = useDispatch();
 
-    const { borderColor } = useSelector(state => state.tooltip.tooltipStyle);
+    const { boxShadowColor } = useSelector(state => state.tooltip.tooltipStyle);
 
-    const [ color, changeColor ] = useState(borderColor);
+    const [ color, changeColor ] = useState(boxShadowColor);
 
     const handleColor = (value) => {
 
         changeColor(value);
 
         dispatch(changeTooltipStyle({
-            option: styleProperties.border.borderColor,
+            option: styleProperties.boxShadow.boxShadowColor,
             value: value
         }));
     }
 
 
     return (
+
         <div className="grid gap-2">
-            <h5>Border Color</h5>
+            <h5>Color</h5>
             <div className="flex items-center gap-4 p-1 border border-solid border-black">
                 <input type="color"
                        value={color}
@@ -38,6 +39,6 @@ const BorderColor = () => {
         </div>
     );
 
-}
 
-export default BorderColor;
+}
+export default BoxShadowColor;
