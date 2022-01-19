@@ -29,7 +29,6 @@ const BorderWidth = () => {
     });
 
     const handleBorderWidth = (position, value) => {
-        console.log(position)
 
         changeBorderWidth(prevState => ({
             ...prevState,

@@ -4,9 +4,8 @@ export const tooltip = createSlice({
     name: 'tooltip',
     initialState: {
         tooltipStyle: {
-            position: 'top',
+            position: 'right',
             color: "#ffffff",
-            text: "Tooltip",
             backgroundColor: '#27272a',
             paddingLeft: 15,
             paddingRight: 15,
@@ -14,18 +13,21 @@ export const tooltip = createSlice({
             paddingBottom: 15,
             borderRadius: 25,
             textAlign: 'left',
-            borderStyle: 'none',
-            borderLeftWidth: 2,
-            borderRightWidth: 2,
-            borderTopWidth: 2,
-            borderBottomWidth: 2,
+            borderStyle: 'solid',
+            borderLeftWidth: 5,
+            borderRightWidth: 5,
+            borderTopWidth: 5,
+            borderBottomWidth: 5,
             borderColor: '#a1c657',
             boxShadowColor:'#a1c657',
-            boxShadowHorizontalLength:0,
-            boxShadowVerticalLength:0,
-            boxShadowBlurRadius:0,
+            boxShadowHorizontalLength:12,
+            boxShadowVerticalLength:12,
+            boxShadowBlurRadius:12,
         },
-        triangleStyle: {},
+        triangleStyle: {
+            width: 12,
+            height: 12,
+        },
         sections: {
             position: {
                 isEnabled: true,
@@ -57,10 +59,14 @@ export const tooltip = createSlice({
             },
             boxShadow: {
                 isEnabled: true,
+                visibility: false,
+            },
+            triangle: {
+                isEnabled: true,
                 visibility: true,
             }
         },
-        tooltipText: 'Tooltip !',
+        tooltipText: "Tooltip it is a test message ! Tooltip it is a test message !",
 
     },
     reducers: {
@@ -78,9 +84,9 @@ export const tooltip = createSlice({
         changeTooltipText: (state, { payload }) => {
             state.tooltipText = payload;
         },
-        changeTriangleOption: (state, { payload }) => {
+        changeTriangleStyle: (state, { payload }) => {
 
-            const options = state.triangleOptions;
+            const options = state.triangleStyle;
             options[payload.option] = payload.value;
 
         },
@@ -90,7 +96,7 @@ export const tooltip = createSlice({
 
 export const {
     changeTooltipStyle,
-    changeTriangleOption,
+    changeTriangleStyle,
     changeSectionVisibilityStatus,
     changeTooltipText
 } = tooltip.actions

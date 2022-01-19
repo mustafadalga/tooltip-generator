@@ -6,6 +6,7 @@ import TextAlign from "./style/TextAlign";
 import TooltipText from "./TooltipText";
 import Border from "./style/border/Border";
 import BoxShadow from "./style/box-shadow/BoxShadow";
+import Triangle from "./style/triangle/Triangle";
 
 const SideBar = () => {
     return(
@@ -19,6 +20,7 @@ const SideBar = () => {
             <TooltipText/>
             <Border/>
             <BoxShadow/>
+            <Triangle/>
 
         </div>
 

@@ -42,11 +42,13 @@ const styleProperties = Object.freeze({
         }
     },
     boxShadow: {
-        boxShadowColor:'boxShadowColor',
-        boxShadowHorizontalLength:'boxShadowHorizontalLength',
-        boxShadowVerticalLength:'boxShadowVerticalLength',
-        boxShadowBlurRadius:'boxShadowBlurRadius',
-    }
+        boxShadowColor: 'boxShadowColor',
+        boxShadowHorizontalLength: 'boxShadowHorizontalLength',
+        boxShadowVerticalLength: 'boxShadowVerticalLength',
+        boxShadowBlurRadius: 'boxShadowBlurRadius',
+    },
+    width: 'width',
+    height: 'height'
 })
 
 const sections = Object.freeze({
@@ -57,7 +59,8 @@ const sections = Object.freeze({
     textAlign: 'textAlign',
     tooltipText: 'tooltipText',
     border: 'border',
-    boxShadow:'boxShadow'
+    boxShadow: 'boxShadow',
+    triangle: 'triangle'
 })
 
 

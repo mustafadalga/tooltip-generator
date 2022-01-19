@@ -11,7 +11,6 @@ const BorderStyle = () => {
     const [ currentBorderStyle, changeBorderStyle ] = useState(borderStyle);
     const [ listVisibility, changeListVisibility ] = useState(false);
 
-console.log(Object.keys(styleProperties.border))
     const handleBorderStyle = (value) => {
          changeBorderStyle(value);
 

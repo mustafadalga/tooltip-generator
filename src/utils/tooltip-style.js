@@ -21,10 +21,9 @@ const tooltipStyle = (options) => {
         borderRightWidth: `${options.borderRightWidth}px`,
         borderTopWidth: `${options.borderTopWidth}px`,
         borderBottomWidth:`${options.borderBottomWidth}px`,
-        boxShadow:`${options.boxShadowHorizontalLength}px ${options.boxShadowVerticalLength}px ${options.boxShadowBlurRadius}px ${options.boxShadowColor}`
+        boxShadow:`${options.boxShadowHorizontalLength}px ${options.boxShadowVerticalLength}px ${options.boxShadowBlurRadius}px ${options.boxShadowColor}`,
+        transition:'all 0.3s 0s ease'
     }
-
-    console.log(style)
 
 
     switch (options.position) {
@@ -32,21 +31,21 @@ const tooltipStyle = (options) => {
         case styleProperties.positions.top:
             style.left = "50%"
             style.transform = 'translateX(-50%)'
-            style.bottom = 'calc(100% + 15px)';
+            style.bottom = 'calc(100% + 25px)';
             break;
         case styleProperties.positions.bottom:
             style.left = "50%"
             style.transform = 'translateX(-50%)'
-            style.top = 'calc(100% + 15px)';
+            style.top = 'calc(100% + 25px)';
             break;
         case styleProperties.positions.left:
             style.top = "50%"
-            style.right = '100%';
+            style.right = 'calc(100% + 25px)';
             style.transform = 'translateY(-50%)'
             break;
         case styleProperties.positions.right:
             style.top = "50%"
-            style.left = '100%';
+            style.left = 'calc(100% + 25px)';
             style.transform = 'translateY(-50%)'
             break;
     }
