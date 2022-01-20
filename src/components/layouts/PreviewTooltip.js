@@ -2,7 +2,6 @@ import tooltipStyle from "../utils/tooltipStyle";
 import triangleStyle from "../utils/triangleStyle";
 import { useSelector } from "react-redux";
 
-
 const Preview = () => {
 
     const tooltipText = useSelector(state => state.tooltip.tooltipText);
@@ -15,7 +14,6 @@ const Preview = () => {
 
     return (
         <div className="row-span-3 col-span-9 flex justify-center items-center overflow-auto">
-
 
                 <div className="tooltip-container">
                     <p>Hover:Lorem ipsum</p>

@@ -1,4 +1,4 @@
-const Codes = () => {
+const TooltipCodes = () => {
 
     return (
 
@@ -8,4 +8,4 @@ const Codes = () => {
     );
 }
 
-export default Codes;
+export default TooltipCodes;
