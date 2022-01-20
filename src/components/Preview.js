@@ -1,5 +1,5 @@
-import tooltipStyle from "../utils/tooltip-style";
-import triangleStyle from "../utils/triangle-style";
+import tooltipStyle from "../utils/tooltipStyle";
+import triangleStyle from "../utils/triangleStyle";
 import { useSelector } from "react-redux";
 
 

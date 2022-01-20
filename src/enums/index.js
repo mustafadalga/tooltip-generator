@@ -5,10 +5,8 @@ const styleProperties = Object.freeze({
         top: 'top',
         bottom: 'bottom'
     },
-    colors: {
-        color: 'color',
-        backgroundColor: 'backgroundColor'
-    },
+    color: 'color',
+    backgroundColor: 'backgroundColor',
     padding: {
         paddingLeft: 'paddingLeft',
         paddingRight: 'paddingRight',
