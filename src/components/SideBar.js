@@ -7,6 +7,7 @@ import TooltipText from "./TooltipText";
 import Border from "./style/border/Border";
 import BoxShadow from "./style/box-shadow/BoxShadow";
 import Triangle from "./style/triangle/Triangle";
+import TooltipSize from "./style/TooltipSize";
 
 const SideBar = () => {
     return(
@@ -14,9 +15,11 @@ const SideBar = () => {
 
             <Position/>
             <Color/>
+
             <Padding/>
             <BorderRadius/>
             <TextAlign/>
+            <TooltipSize/>
             <TooltipText/>
             <Border/>
             <BoxShadow/>

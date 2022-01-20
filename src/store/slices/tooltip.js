@@ -7,6 +7,8 @@ export const tooltip = createSlice({
             position: 'right',
             color: "#ffffff",
             backgroundColor: '#27272a',
+            width:150,
+            height:60,
             paddingLeft: 15,
             paddingRight: 15,
             paddingTop: 15,
@@ -49,6 +51,10 @@ export const tooltip = createSlice({
                 isEnabled: true,
                 visibility: false,
             },
+            tooltipSize: {
+                isEnabled: true,
+                visibility: false,
+            },
             tooltipText: {
                 isEnabled: true,
                 visibility: false,
@@ -63,7 +69,7 @@ export const tooltip = createSlice({
             },
             triangle: {
                 isEnabled: true,
-                visibility: true,
+                visibility: false,
             }
         },
         tooltipText: "Tooltip it is a test message ! Tooltip it is a test message !",

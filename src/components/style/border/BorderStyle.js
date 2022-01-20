@@ -25,10 +25,10 @@ const BorderStyle = () => {
 
         <div className="grid gap-2">
             <h5>Border Style</h5>
-            <div className="relative w-full  bg-white capitalize" onClick={()=>changeListVisibility(!listVisibility)}>
+            <div className="relative w-full  bg-white capitalize border border-solid border-blue-200 cursor-pointer" onClick={()=>changeListVisibility(!listVisibility)}>
                 <div className="flex justify-between px-2 py-2 ">
                     <span>{currentBorderStyle}</span>
-                    <ChevronDown className="cursor-pointer" />
+                    <ChevronDown />
                 </div>
 
 
@@ -38,7 +38,7 @@ const BorderStyle = () => {
 
                     {listVisibility && Object.keys(styleProperties.border.borderStyle).map(type => (
 
-                        <div className="w-full px-2 py-2 bg-white hover:bg-blue-50 cursor-pointer capitalize"
+                        <div className="w-full px-2 py-2 bg-white hover:bg-blue-50 cursor-pointer capitalize border border-solid border-blue-100 border-b-0"
                              key={type}
                              onClick={()=>handleBorderStyle(type)}>
 

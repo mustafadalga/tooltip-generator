@@ -57,6 +57,7 @@ const sections = Object.freeze({
     padding: 'padding',
     borderRadius: 'borderRadius',
     textAlign: 'textAlign',
+    tooltipSize: 'tooltipSize',
     tooltipText: 'tooltipText',
     border: 'border',
     boxShadow: 'boxShadow',

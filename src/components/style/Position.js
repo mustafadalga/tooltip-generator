@@ -46,7 +46,7 @@ const Position = () => {
                                onChange={() => handleTextAlign(position)}/>
 
                         <label htmlFor={position}
-                               className="text-sm font-medium text-gray-900 ml-2 block cursor-pointer">
+                               className="font-medium text-gray-900 ml-2 block cursor-pointer">
 
                             {position}
                         </label>

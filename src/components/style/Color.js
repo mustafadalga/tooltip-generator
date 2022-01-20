@@ -50,13 +50,16 @@ const Color = () => {
 
                 <div className="grid gap-2">
                     <h5>Background Color</h5>
-                    <div className="flex items-center gap-4 p-1 border border-solid border-black">
+
+                    <div className="flex h-8 border border-solid border-blue-200">
+
                         <input type="color"
+                               className="h-full"
                                value={colors.backgroundColor}
                                onInput={e => handleColor(styleProperties.colors.backgroundColor, e.target.value)}/>
 
                         <input type="text"
-                               className="w-full outline-0"
+                               className="w-full h-full outline-0 px-3"
                                value={colors.backgroundColor}
                                onInput={e => handleColor(styleProperties.colors.backgroundColor, e.target.value)}/>
 
@@ -64,14 +67,16 @@ const Color = () => {
                 </div>
 
                 <div className="grid gap-2">
+
                     <h5>Text Color</h5>
-                    <div className="flex items-center gap-4 p-1 border border-solid border-black">
+                    <div className="flex h-8 border border-solid border-blue-200">
                         <input type="color"
+                               className="h-full"
                                value={colors.color}
                                onInput={e => handleColor(styleProperties.colors.color, e.target.value)}/>
 
                         <input type="text"
-                               className="w-full outline-0"
+                               className="w-full h-full outline-0 px-3"
                                value={colors.color}
                                onInput={e => handleColor(styleProperties.colors.color, e.target.value)}/>
                     </div>

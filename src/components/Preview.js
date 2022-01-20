@@ -14,20 +14,20 @@ const Preview = () => {
     const triangleStyleObject = triangleStyle(tooltipOptions,triangleOptions)
 
     return (
-        <div className="row-span-3 col-span-9">
+        <div className="row-span-3 col-span-9 flex justify-center items-center overflow-auto">
 
 
-            <div className="m-20">
                 <div className="tooltip-container">
                     <p>Hover:Lorem ipsum</p>
 
                     <div className="tooltip" style={tooltipStyleObject}>
+
                         <span>{tooltipText}</span>
-                        <i className="triangle" style={triangleStyleObject}></i>
+                        <i className="triangle" style={triangleStyleObject}/>
+
                     </div>
                 </div>
 
-            </div>
         </div>
     );
 };
