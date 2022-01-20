@@ -3,6 +3,7 @@ import { sections } from "../../../enums";
 import TriangleHeight from "./TriangleHeight";
 import TriangleWidth from "./TriangleWidth";
 import { useSelector } from "react-redux";
+import TriangleColor from "./TriangleColor";
 
 const Triangle = () => {
 
@@ -21,6 +22,7 @@ const Triangle = () => {
 
             <div className="grid gap-10 bg-stone-50	 px-4 py-8">
 
+                <TriangleColor/>
                 <TriangleWidth/>
                 <TriangleHeight/>
 

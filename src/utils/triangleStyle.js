@@ -58,7 +58,7 @@ const triangleStyle = (tooltipOptions, triangleOptions) => {
             style = {
                 left: '50%',
                 transform: 'translateX(-50%)',
-                borderColor: `${tooltipOptions.backgroundColor} transparent transparent`,
+                borderColor: `${triangleOptions.color} transparent transparent`,
                 borderWidth: `${triangleOptions.height}px ${triangleOptions.width / 2}px 0px`,
             }
 
@@ -69,7 +69,7 @@ const triangleStyle = (tooltipOptions, triangleOptions) => {
             style = {
                 left: '50%',
                 transform: 'translateX(-50%)',
-                borderColor: `transparent transparent ${tooltipOptions.backgroundColor}`,
+                borderColor: `transparent transparent ${triangleOptions.color}`,
                 borderWidth: `0px ${triangleOptions.width / 2}px ${triangleOptions.height}px`,
             }
 
@@ -80,7 +80,7 @@ const triangleStyle = (tooltipOptions, triangleOptions) => {
             style = {
                 top: "50%",
                 transform: 'translateY(-50%)',
-                borderColor: `transparent transparent transparent ${tooltipOptions.backgroundColor}`,
+                borderColor: `transparent transparent transparent ${triangleOptions.color}`,
                 borderWidth: `${triangleOptions.height / 2}px 0px ${triangleOptions.height / 2}px ${triangleOptions.width}px`,
             }
 
@@ -91,7 +91,7 @@ const triangleStyle = (tooltipOptions, triangleOptions) => {
             style = {
                 top: "50%",
                 transform: 'translateY(-50%)',
-                borderColor: `transparent ${tooltipOptions.backgroundColor} transparent transparent`,
+                borderColor: `transparent ${triangleOptions.color} transparent transparent`,
                 borderWidth: `${triangleOptions.height / 2}px ${triangleOptions.width}px ${triangleOptions.height / 2}px 0px`,
             }
 

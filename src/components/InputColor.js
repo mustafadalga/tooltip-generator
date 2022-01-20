@@ -5,7 +5,7 @@ const InputColor = ({ title, color, setColor }) => {
 
         <div className="grid gap-2">
 
-            <h5>{title}</h5>
+            <h6>{title}</h6>
 
             <div className="flex h-8 border border-solid border-blue-200">
 

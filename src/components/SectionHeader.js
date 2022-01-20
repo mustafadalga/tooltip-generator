@@ -20,7 +20,7 @@ const SectionHeader = ({ title, sectionName }) => {
         <div className={'flex justify-between items-center cursor-pointer p-2 bg-blue-50'}
              onClick={() => handleVisibility()}>
 
-            <span className="text-xl uppercase">{title}</span>
+            <span className="uppercase">{title}</span>
 
             <ChevronDown
                 className={`transition transition-all duration-300 ease-in-out ${sectionState.visibility ? 'rotate-180' : ''}`}/>

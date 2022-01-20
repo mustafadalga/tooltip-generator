@@ -29,6 +29,7 @@ export const tooltip = createSlice({
         triangleStyle: {
             width: 12,
             height: 12,
+            color: '#27272a',
         },
         sections: {
             position: {
