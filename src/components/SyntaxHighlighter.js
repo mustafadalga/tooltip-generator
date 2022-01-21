@@ -6,13 +6,11 @@ export default function SyntaxHighlighter({ code, language }) {
 
     useEffect(() => {
         Prism.highlightAll();
-    }, []);
+    }, [ code ]);
 
     return (
-        <div className="Code">
-            <pre>
+          <pre>
                <code className={`language-${language}`}>{code}</code>
           </pre>
-        </div>
     );
 }

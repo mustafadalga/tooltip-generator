@@ -1,14 +1,13 @@
-import './App.css';
-import SideBar from "./components/SideBar";
-import Codes from "./components/Codes";
-import Preview from "./components/Preview";
+import SideBar from "./components/layouts/SideBar";
+import PreviewTooltipCode from "./components/layouts/PreviewTooltipCode";
+import PreviewTooltip from "./components/layouts/PreviewTooltip";
 
 function App() {
     return (
         <div className="App w-full h-screen	max-w-screen-3xl mx-auto grid grid-rows-5 grid-cols-12">
             <SideBar/>
-            <Preview/>
-            <Codes/>
+            <PreviewTooltip/>
+            <PreviewTooltipCode/>
 
         </div>
     );

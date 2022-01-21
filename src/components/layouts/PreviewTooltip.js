@@ -1,8 +1,8 @@
-import tooltipStyle from "../utils/tooltipStyle";
-import triangleStyle from "../utils/triangleStyle";
+import tooltipStyle from "../../utils/tooltipStyle";
+import triangleStyle from "../../utils/triangleStyle";
 import { useSelector } from "react-redux";
 
-const Preview = () => {
+const PreviewTooltip = () => {
 
     const tooltipText = useSelector(state => state.tooltip.tooltipText);
 
@@ -15,19 +15,19 @@ const Preview = () => {
     return (
         <div className="row-span-3 col-span-9 flex justify-center items-center overflow-auto">
 
-                <div className="tooltip-container">
-                    <p>Hover:Lorem ipsum</p>
+            <div className="tooltip-container">
+                <p>Hover:Lorem ipsum</p>
 
-                    <div className="tooltip" style={tooltipStyleObject}>
+                <div className="tooltip" style={tooltipStyleObject}>
 
-                        <span>{tooltipText}</span>
-                        <i className="triangle" style={triangleStyleObject}/>
+                    <span>{tooltipText}</span>
+                    <i className="triangle" style={triangleStyleObject}/>
 
-                    </div>
                 </div>
+            </div>
 
         </div>
     );
 };
 
-export default Preview;
+export default PreviewTooltip;

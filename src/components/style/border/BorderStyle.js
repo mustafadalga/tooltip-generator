@@ -1,5 +1,5 @@
 import { styleProperties } from "../../../enums";
-import ChevronDown from "../../icons/chevronDown";
+import ChevronDown from "../../icons/ChevronDown";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { changeTooltipStyle } from "../../../store/slices/tooltip";

@@ -1,5 +1,5 @@
 import SectionHeader from "./SectionHeader";
-import { sections, styleProperties } from "../enums";
+import { sections } from "../enums";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTooltipText } from "../store/slices/tooltip";
 import { useState } from "react";

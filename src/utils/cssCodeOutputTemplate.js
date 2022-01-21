@@ -1,6 +1,6 @@
 import objectStyleToCSS from "./objectStyleToCSS";
 
-export default function cssCodeOutputTemplate(tooltip,triangle){
+export default function cssCodeOutputTemplate(tooltip, triangle) {
 
     return `
 .tooltip-container {

@@ -1,4 +1,4 @@
-import ChevronDown from "./icons/chevronDown";
+import ChevronDown from "./icons/ChevronDown";
 import { useDispatch, useSelector } from "react-redux";
 import { changeSectionVisibilityStatus } from "../store/slices/tooltip";
 
