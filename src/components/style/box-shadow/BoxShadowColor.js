@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { styleProperties } from "../../../enums";
-import InputColor from "../../InputColor";
-import { changeTooltipStyle } from "../../../store/slices/tooltip";
+import { styleProperties } from "@/enums";
+import InputColor from "@/components/InputColor";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
 
 const BoxShadowColor = () => {
     const { boxShadowColor } = useSelector(state => state.tooltip.tooltipStyle);

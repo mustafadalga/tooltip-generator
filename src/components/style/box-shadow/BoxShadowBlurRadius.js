@@ -1,7 +1,7 @@
-import { styleProperties } from "../../../enums";
+import { styleProperties } from "@/enums";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../../store/slices/tooltip";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
 
 const BoxShadowBlurRadius = () => {
 

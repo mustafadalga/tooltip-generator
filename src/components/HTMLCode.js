@@ -1,6 +1,6 @@
 import SyntaxHighlighter from "./SyntaxHighlighter";
 import { useSelector } from "react-redux";
-import htmlCodeOutputTemplate from "../utils/htmlCodeOutputTemplate";
+import htmlCodeOutputTemplate from "@/utils/htmlCodeOutputTemplate";
 
 const HTMLCode = () => {
 

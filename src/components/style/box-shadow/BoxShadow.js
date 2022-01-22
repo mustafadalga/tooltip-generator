@@ -1,5 +1,5 @@
-import SectionHeader from "../../SectionHeader";
-import { sections } from "../../../enums";
+import SectionHeader from "@/components/SectionHeader";
+import { sections } from "@/enums";
 import { useSelector } from "react-redux";
 import BoxShadowHorizontalLength from "./BoxShadowHorizontalLength";
 import BoxShadowVerticalLength from "./BoxShadowVerticalLength";

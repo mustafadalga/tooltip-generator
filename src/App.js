@@ -1,6 +1,6 @@
-import SideBar from "./components/layouts/SideBar";
-import PreviewTooltipCode from "./components/layouts/PreviewTooltipCode";
-import PreviewTooltip from "./components/layouts/PreviewTooltip";
+import SideBar from "@/layouts/SideBar";
+import PreviewTooltipCode from "@/layouts/PreviewTooltipCode";
+import PreviewTooltip from "@/layouts/PreviewTooltip";
 
 function App() {
     return (

@@ -1,6 +1,6 @@
 import TooltipWidth from "./TooltipWidth";
-import SectionHeader from "../SectionHeader";
-import { sections } from "../../enums";
+import SectionHeader from "@/components/SectionHeader";
+import { sections } from "@/enums";
 import TooltipHeight from "./TooltipHeight";
 import { useSelector } from "react-redux";
 

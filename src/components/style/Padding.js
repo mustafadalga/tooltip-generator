@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
-import { sections, styleProperties } from "../../enums";
-import SectionHeader from "../SectionHeader";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
+import { sections, styleProperties } from "@/enums";
+import SectionHeader from "@/components/SectionHeader";
 
 const Padding = () => {
 

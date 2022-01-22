@@ -1,8 +1,8 @@
 import SyntaxHighlighter from "./SyntaxHighlighter";
 import { useSelector } from "react-redux";
-import tooltipStyle from "../utils/tooltipStyle";
-import triangleStyle from "../utils/triangleStyle";
-import cssCodeOutputTemplate from "../utils/cssCodeOutputTemplate";
+import tooltipStyle from "@/utils/tooltipStyle";
+import triangleStyle from "@/utils/triangleStyle";
+import cssCodeOutputTemplate from "@/utils/cssCodeOutputTemplate";
 
 const CSSCode = () => {
 

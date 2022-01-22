@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { sections, styleProperties } from "../../enums";
-import SectionHeader from "../SectionHeader";
-import InputColor from "../InputColor";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
+import { sections, styleProperties } from "@/enums";
+import SectionHeader from "@/components/SectionHeader";
+import InputColor from "@/components/InputColor";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
 
 const Color = () => {
 

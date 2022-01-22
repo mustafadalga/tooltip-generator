@@ -1,8 +1,8 @@
-import { styleProperties } from "../../../enums";
+import { styleProperties } from "@/enums";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import InputColor from "../../InputColor";
-import { changeTriangleStyle } from "../../../store/slices/tooltip";
+import InputColor from "@/components/InputColor";
+import { changeTriangleStyle } from "@/store/slices/tooltip";
 
 const TriangleColor = () => {
 

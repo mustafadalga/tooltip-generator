@@ -1,7 +1,7 @@
-import SectionHeader from "../SectionHeader";
-import { sections, styleProperties } from "../../enums";
+import SectionHeader from "@/components/SectionHeader";
+import { sections, styleProperties } from "@/enums";
 import { useDispatch, useSelector } from "react-redux";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
 
 const TextAlign = () => {
 

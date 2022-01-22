@@ -1,4 +1,4 @@
-import ClipBoard from "./icons/ClipBoard";
+import ClipBoard from "@/components/icons/ClipBoard";
 import { useState } from "react";
 
 const CopyCode = ({ code }) => {

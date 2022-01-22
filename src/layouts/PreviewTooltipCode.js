@@ -1,12 +1,12 @@
 import { useState } from "react";
-import HTMLCode from "../HTMLCode";
-import CSSCode from "../CSSCode";
-import CopyCode from "../CopyCode";
-import htmlCodeOutputTemplate from "../../utils/htmlCodeOutputTemplate";
+import HTMLCode from "@/components/HTMLCode";
+import CSSCode from "@/components/CSSCode";
+import CopyCode from "@/components/CopyCode";
+import htmlCodeOutputTemplate from "@/utils/htmlCodeOutputTemplate";
 import { useSelector } from "react-redux";
-import cssCodeOutputTemplate from "../../utils/cssCodeOutputTemplate";
-import tooltipStyle from "../../utils/tooltipStyle";
-import triangleStyle from "../../utils/triangleStyle";
+import cssCodeOutputTemplate from "@/utils/cssCodeOutputTemplate";
+import tooltipStyle from "@/utils/tooltipStyle";
+import triangleStyle from "@/utils/triangleStyle";
 
 const PreviewTooltipCode = () => {
     const tooltipText = useSelector(state => state.tooltip.tooltipText);

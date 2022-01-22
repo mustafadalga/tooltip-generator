@@ -1,8 +1,8 @@
-import { styleProperties } from "../../../enums";
-import ChevronDown from "../../icons/ChevronDown";
+import { styleProperties } from "@/enums";
+import ChevronDown from "@/components/icons/ChevronDown";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../../store/slices/tooltip";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
 
 const BorderStyle = () => {
 
@@ -25,7 +25,9 @@ const BorderStyle = () => {
 
         <div className="grid gap-2">
             <h5>Border Style</h5>
+
             <div className="relative w-full  bg-white capitalize border border-solid border-blue-200 cursor-pointer" onClick={()=>changeListVisibility(!listVisibility)}>
+
                 <div className="flex justify-between px-2 py-2 ">
                     <span>{currentBorderStyle}</span>
                     <ChevronDown />

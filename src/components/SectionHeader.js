@@ -1,6 +1,6 @@
-import ChevronDown from "./icons/ChevronDown";
+import ChevronDown from "@/components/icons/ChevronDown";
 import { useDispatch, useSelector } from "react-redux";
-import { changeSectionVisibilityStatus } from "../store/slices/tooltip";
+import { changeSectionVisibilityStatus } from "@/store/slices/tooltip";
 
 const SectionHeader = ({ title, sectionName }) => {
 

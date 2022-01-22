@@ -1,5 +1,5 @@
-import tooltipStyle from "../../utils/tooltipStyle";
-import triangleStyle from "../../utils/triangleStyle";
+import tooltipStyle from "@/utils/tooltipStyle";
+import triangleStyle from "@/utils/triangleStyle";
 import { useSelector } from "react-redux";
 
 const PreviewTooltip = () => {

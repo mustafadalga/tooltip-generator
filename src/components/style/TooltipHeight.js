@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { changeTooltipStyle } from "../../store/slices/tooltip";
-import { styleProperties } from "../../enums";
+import { changeTooltipStyle } from "@/store/slices/tooltip";
+import { styleProperties } from "@/enums";
 
 const TooltipHeight = () => {
 

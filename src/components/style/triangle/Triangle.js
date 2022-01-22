@@ -1,5 +1,5 @@
-import SectionHeader from "../../SectionHeader";
-import { sections } from "../../../enums";
+import SectionHeader from "@/components/SectionHeader";
+import { sections } from "@/enums";
 import TriangleHeight from "./TriangleHeight";
 import TriangleWidth from "./TriangleWidth";
 import { useSelector } from "react-redux";
