@@ -4,8 +4,8 @@ import { styleProperties } from "../enums";
 const tooltipStyle = (options) => {
     const style = {
         position: 'absolute',
-        // visibility: 'hidden',
-        // opacity: 0,
+        visibility: 'hidden',
+        opacity: 0,
         backgroundColor:options.backgroundColor,
         color: options.color,
         paddingLeft:`${options.paddingLeft}px`,
@@ -52,8 +52,7 @@ const tooltipStyle = (options) => {
             break;
     }
 
-
-    return style
+    return style;
 
 }
 

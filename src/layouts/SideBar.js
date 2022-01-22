@@ -15,11 +15,10 @@ const SideBar = () => {
 
             <Position/>
             <Color/>
-
+            <TooltipSize/>
             <Padding/>
             <BorderRadius/>
             <TextAlign/>
-            <TooltipSize/>
             <TooltipText/>
             <Border/>
             <BoxShadow/>
@@ -31,5 +30,3 @@ const SideBar = () => {
 }
 
 export default SideBar;
-
-//https://tailwindcss.com/docs/hover-focus-and-other-states#open-closed-state

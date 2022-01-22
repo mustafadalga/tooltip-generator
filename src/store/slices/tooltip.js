@@ -1,80 +1,50 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { sections } from "@/enums";
 
 export const tooltip = createSlice({
     name: 'tooltip',
     initialState: {
         tooltipStyle: {
-            position: 'right',
+            position: 'top',
             color: "#ffffff",
             backgroundColor: '#3b82f6',
-            width: 150,
-            height: 60,
-            paddingLeft: 15,
-            paddingRight: 15,
-            paddingTop: 15,
-            paddingBottom: 15,
+            width: 160,
+            height: 40,
+            paddingLeft: 12,
+            paddingRight: 12,
+            paddingTop: 8,
+            paddingBottom: 8,
             borderRadius: 12,
-            textAlign: 'left',
-            borderStyle: 'solid',
-            borderLeftWidth: 5,
-            borderRightWidth: 5,
-            borderTopWidth: 5,
-            borderBottomWidth: 5,
+            textAlign: 'center',
+            borderStyle: 'none',
+            borderLeftWidth: 0,
+            borderRightWidth: 0,
+            borderTopWidth: 0,
+            borderBottomWidth: 0,
             borderColor: '#3b82f6',
             boxShadowColor: '#475569',
-            boxShadowHorizontalLength: 12,
-            boxShadowVerticalLength: 12,
-            boxShadowBlurRadius: 12,
+            boxShadowHorizontalLength: 0,
+            boxShadowVerticalLength: 4,
+            boxShadowBlurRadius: 20,
         },
         triangleStyle: {
             width: 12,
             height: 12,
             color: '#3b82f6',
         },
-        sections: {
-            position: {
-                isEnabled: true,
-                visibility: true,
-            },
-            color: {
-                isEnabled: true,
-                visibility: false,
-            },
-            padding: {
-                isEnabled: true,
-                visibility: false,
-            },
-            borderRadius: {
-                isEnabled: true,
-                visibility: false,
-            },
-            textAlign: {
-                isEnabled: true,
-                visibility: false,
-            },
-            tooltipSize: {
-                isEnabled: true,
-                visibility: false,
-            },
-            tooltipText: {
-                isEnabled: true,
-                visibility: false,
-            },
-            border: {
-                isEnabled: true,
-                visibility: false,
-            },
-            boxShadow: {
-                isEnabled: true,
-                visibility: false,
-            },
-            triangle: {
-                isEnabled: true,
-                visibility: false,
-            }
+        sectionVisibility: {
+            [sections.position]: true,
+            [sections.color]: true,
+            [sections.tooltipSize]: true,
+            [sections.padding]: true,
+            [sections.borderRadius]: true,
+            [sections.textAlign]: true,
+            [sections.tooltipText]: true,
+            [sections.border]: true,
+            [sections.boxShadow]: true,
+            [sections.triangle]: true,
         },
-        tooltipText: "Tooltip it is a test message ! Tooltip it is a test message !",
-
+        tooltipText: "Tooltip text",
     },
     reducers: {
         changeTooltipStyle: (state, { payload }) => {
@@ -83,10 +53,11 @@ export const tooltip = createSlice({
             options[payload.option] = payload.value;
 
         },
-        changeSectionVisibilityStatus: (state, { payload }) => {
+        changeSectionVisibility: (state, { payload }) => {
 
-            const sections = state.sections;
-            sections[payload.section].visibility = !sections[payload.section].visibility;
+            const sectionVisibility = state.sectionVisibility;
+            sectionVisibility[payload.section] = !sectionVisibility[payload.section]
+
         },
         changeTooltipText: (state, { payload }) => {
             state.tooltipText = payload;
@@ -104,7 +75,7 @@ export const tooltip = createSlice({
 export const {
     changeTooltipStyle,
     changeTriangleStyle,
-    changeSectionVisibilityStatus,
+    changeSectionVisibility,
     changeTooltipText
 } = tooltip.actions
 
