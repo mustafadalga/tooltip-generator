@@ -7,7 +7,7 @@ const Position = () => {
 
     const dispatch = useDispatch();
     const { position: selectedPosition } = useSelector(state => state.tooltip.tooltipStyle);
-    const { [sections.position]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.position]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
 
     const handleTextAlign = (position) => {
@@ -26,7 +26,7 @@ const Position = () => {
             <SectionHeader title="Position" sectionName={sections.position}/>
 
 
-            { sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid grid-rows-2 grid-cols-2 gap-10 bg-stone-50	 px-4 py-8">

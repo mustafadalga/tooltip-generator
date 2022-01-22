@@ -8,7 +8,7 @@ const Padding = () => {
 
     const dispatch = useDispatch();
     const { paddingLeft, paddingRight, paddingTop, paddingBottom } = useSelector(state => state.tooltip.tooltipStyle);
-    const { [sections.padding]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.padding]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const [ padding, changePadding ] = useState({
         paddingLeft: paddingLeft,
@@ -42,7 +42,7 @@ const Padding = () => {
                 sectionName={sections.padding}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid gap-10 bg-stone-50	 px-4 py-8">

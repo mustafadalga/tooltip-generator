@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 const Border = () => {
 
-    const { [sections.border]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.border]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
 
     return (
@@ -18,7 +18,7 @@ const Border = () => {
                 sectionName={sections.border}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid gap-10 bg-stone-50	 px-4 py-8">

@@ -7,7 +7,7 @@ import BoxShadowBlurRadius from "./BoxShadowBlurRadius";
 import BoxShadowColor from "./BoxShadowColor";
 
 const BoxShadow = () => {
-    const { [sections.boxShadow]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.boxShadow]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     return (
         <div className="border-b border-solid border-slate-400">
@@ -16,7 +16,7 @@ const BoxShadow = () => {
                 title="Box Shadow"
                 sectionName={sections.boxShadow}/>
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
             <div className="grid gap-10 bg-stone-50	 px-4 py-8">
 

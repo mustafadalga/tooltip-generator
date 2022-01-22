@@ -8,7 +8,7 @@ const TooltipText = () => {
 
     const dispatch = useDispatch();
     const currentTooltipText = useSelector(state => state.tooltip.tooltipText);
-    const { [sections.tooltipText]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.tooltipText]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const [ tooltipText, setTooltipText ] = useState(currentTooltipText);
 
@@ -28,7 +28,7 @@ const TooltipText = () => {
             <SectionHeader title="Tooltip Text" sectionName={sections.tooltipText}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
             <div className="grid gap-10 bg-stone-50 px-4 py-8">
 

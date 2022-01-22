@@ -7,7 +7,7 @@ const BorderRadius = () => {
     const dispatch = useDispatch();
 
     const { borderRadius } = useSelector(state => state.tooltip.tooltipStyle);
-    const { [sections.borderRadius]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.borderRadius]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const [ borderRadiusStyle, changeBorderRadius ] = useState(borderRadius);
 
@@ -32,7 +32,7 @@ const BorderRadius = () => {
                 sectionName={sections.borderRadius}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid gap-2 bg-stone-50 px-4 py-8">

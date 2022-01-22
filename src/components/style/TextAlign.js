@@ -7,7 +7,7 @@ const TextAlign = () => {
 
     const dispatch = useDispatch();
     const { textAlign: selectedTextAlign } = useSelector(state => state.tooltip.tooltipStyle);
-    const { [sections.textAlign]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.textAlign]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const handleTextAlign = (align) => {
 
@@ -27,7 +27,7 @@ const TextAlign = () => {
                 title="Text Alignment"
                 sectionName={sections.textAlign}/>
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid grid-cols-3 gap-10 bg-stone-50	 px-4 py-8">

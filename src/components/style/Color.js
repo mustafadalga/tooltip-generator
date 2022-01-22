@@ -8,7 +8,7 @@ import { changeTooltipStyle } from "@/store/slices/tooltip";
 const Color = () => {
 
     const { color, backgroundColor } = useSelector(state => state.tooltip.tooltipStyle);
-    const { [sections.color]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.color]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const [ textColor, setTextColor ] = useState(color);
     const [ bgColor, setBgColor ] = useState(backgroundColor);
@@ -42,7 +42,7 @@ const Color = () => {
                 sectionName={sections.color}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid gap-8 bg-stone-50 px-4 py-8">

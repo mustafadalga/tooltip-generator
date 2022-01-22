@@ -1,16 +1,16 @@
 import ChevronDown from "@/components/icons/ChevronDown";
 import { useDispatch, useSelector } from "react-redux";
-import { changeSectionVisibilityStatus } from "@/store/slices/tooltip";
+import { changeSectionVisibility } from "@/store/slices/tooltip";
 
 const SectionHeader = ({ title, sectionName }) => {
 
 
     const dispatch = useDispatch();
-    const { [sectionName]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sectionName]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
     const handleVisibility = () => {
 
-        dispatch(changeSectionVisibilityStatus({
+        dispatch(changeSectionVisibility({
             section: sectionName,
         }));
 
@@ -23,7 +23,7 @@ const SectionHeader = ({ title, sectionName }) => {
             <span className="uppercase">{title}</span>
 
             <ChevronDown
-                className={`transition transition-all duration-300 ease-in-out ${sectionState.visibility ? 'rotate-180' : ''}`}/>
+                className={`transition transition-all duration-300 ease-in-out ${sectionVisibility ? 'rotate-180' : ''}`}/>
 
         </div>
 

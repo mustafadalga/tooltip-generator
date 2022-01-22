@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 const TooltipSize = () => {
 
-    const { [sections.tooltipSize]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.tooltipSize]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
 
     return (
@@ -17,7 +17,7 @@ const TooltipSize = () => {
                 sectionName={sections.tooltipSize}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
 
             <div className="grid grid-cols-2 gap-10 bg-stone-50	 px-4 py-8">

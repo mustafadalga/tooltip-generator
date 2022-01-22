@@ -7,7 +7,7 @@ import TriangleColor from "./TriangleColor";
 
 const Triangle = () => {
 
-    const { [sections.triangle]: sectionState } = useSelector(state => state.tooltip.sections);
+    const { [sections.triangle]: sectionVisibility } = useSelector(state => state.tooltip.sectionVisibility);
 
 
     return (
@@ -18,7 +18,7 @@ const Triangle = () => {
                 sectionName={sections.triangle}/>
 
 
-            {sectionState.visibility &&
+            { sectionVisibility &&
 
             <div className="grid gap-10 bg-stone-50	 px-4 py-8">
 
