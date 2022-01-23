@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tooltip-generator/static/css/main.9c97cbbc.css",
+    "main.js": "/tooltip-generator/static/js/main.6c8e4740.js",
+    "Modal.js": "/tooltip-generator/static/js/Modal.7466beee.chunk.js",
+    "Template1.js": "/tooltip-generator/static/js/Template1.7590bbad.chunk.js",
+    "Template2.js": "/tooltip-generator/static/js/Template2.23d3e10e.chunk.js",
+    "index.html": "/tooltip-generator/index.html",
+    "main.9c97cbbc.css.map": "/tooltip-generator/static/css/main.9c97cbbc.css.map",
+    "main.6c8e4740.js.map": "/tooltip-generator/static/js/main.6c8e4740.js.map",
+    "Modal.7466beee.chunk.js.map": "/tooltip-generator/static/js/Modal.7466beee.chunk.js.map",
+    "Template1.7590bbad.chunk.js.map": "/tooltip-generator/static/js/Template1.7590bbad.chunk.js.map",
+    "Template2.23d3e10e.chunk.js.map": "/tooltip-generator/static/js/Template2.23d3e10e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c97cbbc.css",
+    "static/js/main.6c8e4740.js"
+  ]
+}
