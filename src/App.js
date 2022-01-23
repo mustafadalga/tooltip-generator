@@ -7,6 +7,7 @@ import htmlCodeOutputTemplate from "@/utils/htmlCodeOutputTemplate";
 import cssCodeOutputTemplate from "@/utils/cssCodeOutputTemplate";
 import tooltipStyle from "@/utils/tooltipStyle";
 import triangleStyle from "@/utils/triangleStyle";
+import GithubBadge from "@/components/GithubBadge";
 
 const Modal = React.lazy(() => import(/* webpackChunkName: "Modal"*/ '@/components/Modal'));
 
@@ -28,6 +29,8 @@ function App() {
 
     return (
         <div className="w-full h-screen	max-w-screen-3xl mx-auto grid grid-rows-5 grid-cols-12">
+
+            <GithubBadge/>
 
 
             <Suspense fallback={<div>Loading...</div>}>
