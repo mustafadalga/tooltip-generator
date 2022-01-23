@@ -102,7 +102,8 @@ const triangleStyle = (tooltipOptions, triangleOptions) => {
     style = {
         position: 'absolute',
         ...style,
-        ...handleTooltipBorder(tooltipOptions)
+        ...handleTooltipBorder(tooltipOptions),
+        borderStyle:'solid'
     }
 
     return style;

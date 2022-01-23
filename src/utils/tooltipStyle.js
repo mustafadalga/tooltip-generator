@@ -1,4 +1,4 @@
-import { styleProperties } from "../enums";
+import { styleProperties } from "@/enums";
 
 
 const tooltipStyle = (options) => {

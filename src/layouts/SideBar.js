@@ -9,9 +9,9 @@ import BoxShadow from "@/components/style/box-shadow/BoxShadow";
 import Triangle from "@/components/style/triangle/Triangle";
 import TooltipSize from "@/components/style/TooltipSize";
 
-const SideBar = () => {
+const SideBar = ({className}) => {
     return(
-        <div className="row-span-full col-span-3 w-full  border-r border-solid border-slate-400 relative overflow-y-auto">
+        <div className={className}>
 
             <Position/>
             <Color/>
