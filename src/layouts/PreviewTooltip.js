@@ -34,11 +34,11 @@ const PreviewTooltip = () => {
             </div>
 
 
-            <div className="tooltip-container relative group">
+            <div className="relative group">
                 <p className="cursor-pointer">Hover over me</p>
 
                 <div
-                    className={`tooltip group-hover:!visible group-hover:!opacity-100 ${!preview ? '!visible !opacity-100' : ''}`}
+                    className={`group-hover:!visible group-hover:!opacity-100 ${!preview ? '!visible !opacity-100' : ''}`}
                     style={tooltipStyleObject}>
 
                     <span>{tooltipText}</span>
