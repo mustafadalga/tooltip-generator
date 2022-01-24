@@ -42,5 +42,5 @@ npm start
 
 
 ## License
- [![License](https://img.shields.io/github/license/mustafadalga/tooltip-generator)](https://github.com/mustafadalga/tooltip-generator/blob/master/LICENSE)
+ [![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/tooltip-generator/blob/master/LICENSE)
 
